@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	color: white;
 }
 
 .container {
@@ -94,7 +95,7 @@
 }
 
 [class*="col"] {
-	border: 5px solid black;
+	/* border: 1px solid black; */
 	float: left; /*lets columns stack horizontally*/
 	box-sizing: border-box;/* ensures actual widt does not exceed set width*/
 }
@@ -181,4 +182,9 @@
 } 
 
 }
+button{
+	margin-left: 200px;
+	margin-top: 10px;
+}
+
 
