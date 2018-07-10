@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: brown;
+	padding:50px;
+	height: 25vh;
+	}
+.logo {
+	font-size: 3em;
+	color: #fff;
+}
+nav {
+	position: absolute;
+	right:50px;
+}
+span{
+	color: #f4c20d: yellow;
+}
+nav > ul {
+	position: relative;
+	top:-40px;
+}
+
+nav > ul > li {
+	display: inline-block;
+	margin-right : 20px;
+	background-color: #4885ed;
+	padding: 10px;
+	width:100px;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+main {
+	background-color:gray;
+	height: 75vh; /*vh means viewport heigth*/
+	width: 75vw; /*vw means viewport width*/
+}
