@@ -9,6 +9,7 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size:cover;
+
 }
 
 h1	{
@@ -27,21 +28,22 @@ h2{
 .header{
 	min-height: 150px;
 	background-color: darkviolet;
-	background-image: url(../images/uncharted.jpg); 
+	background-image: url(../images/bag.jpg); 
+	background-size:cover;
+	/*object-fit: cover;*/
 }
 
 .main{
 	min-height: 700px;
-	background-color: lightgrey;
-	background-image: url(../images/uncharted.jpg);
+	background-color: rgba(0,0,0, .4);
+	/*background-image: url(../images/uncharted.jpg);*/
 	
 }
 .footer{
-	height: 100px;
-	background-color: skyblue;
-	background-image: url(../images/uncharted.jpg);
+	height: 50px;
+	background-color: #2C1320;
 	color: brown;
-
+	border: 2px solid #A7ADC6;
 }
 .row:after {
 	/*prevent container collase*/
@@ -135,10 +137,11 @@ h2{
 }
 #uncharted-logo {
 	
-	color: #654321;
-	height:150px;
-	padding-top: 15%;
-	padding-left: 10%;
+	color: #CACFD6;
+	margin-left:50px;
+	position: relative;
+	top: 15px;
+	font-family: 'Dancing Script', cursive;
 	
 }
 
@@ -151,6 +154,8 @@ h2{
 .explore-right > h2{
 	color: darkorange;
 	font-size: 23px;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
 }
 .explore-left{
 	float:left;
@@ -161,11 +166,13 @@ h2{
 .explore-right {
 	
 	width: 100%;
-	
 }
 .explore-right > p {
-	color: brown;
+	color: #BFACAA;
+	text-align: justify;
+
 }
+
 
 
 
@@ -307,13 +314,13 @@ input{
 	background-color:#EFD78D;
 	padding:12px 20px;
 	color: black;
-	border: 3px solid #CCC;
+	border: 3px solid maroon;
 	-webkit-transition:0.5s;
 	transition:0.5s;
 	outline:none;
 }
 input:focus {
-	border: 3px solid #555;
+	border: 3px solid darkorange;
 }
 
 .gender{
@@ -331,8 +338,18 @@ input:focus {
 #sign-up {
 	padding: 25px;
 	padding-left: 50px;
+	font-family: 'Dancing Script', cursive;
 }
 
 .listed > li > button {
 		width: 100px;
+		font-family: 'Dancing Script', cursive;
+}
+
+.footer-link > a {
+	text-decoration:none;
+	color:pink;
+	margin: 10px;
+	font-size: 10px;
+	text-align: right;
 }
