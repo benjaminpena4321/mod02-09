@@ -20,6 +20,9 @@ h2{
 	color:#E97E2E;
 
 }
+#sign-up > h2{
+	text-align: center;
+}
 
 .container {
 	max-width: 960px; /*so that the layout wont expand extensively in very wide displays*/
@@ -129,7 +132,7 @@ h2{
 }
 
 
-/*desktop*/
+
 .listed > li {
 	padding: 10px;
 	list-style: none;
@@ -148,6 +151,7 @@ h2{
 #explore {
 	padding: 10px;
 	color:brown;
+	height: 100%;
 	
 	
 }
@@ -156,11 +160,6 @@ h2{
 	font-size: 23px;
 	text-align: center;
 	font-family: 'Dancing Script', cursive;
-}
-.explore-left{
-	float:left;
-	width: 70%;
-	margin-right: 10px;
 }
 
 .explore-right {
@@ -173,6 +172,94 @@ h2{
 
 }
 
+button{
+	 background-color: brown;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+hr {
+	 display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #874338;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+input:focus {
+	border: 3px solid darkorange;
+}
+
+.gender{
+	color: #EFD78D;
+}
+
+#log-in {
+	
+	padding: 10px;
+}
+#link {
+	margin-left: 400px;
+}
+
+
+
+
+
+.footer-link > a {
+	text-decoration:none;
+	color:pink;
+	margin: 10px;
+	font-size: 10px;
+	text-align: right;
+}
+
+
+/*Desktop*/
+@media only screen and (min-width: 961px) {
+
+.explore-left{
+	float:left;
+	width: 70%;
+	margin-right: 10px;
+}
+
+.explore-left > img {
+	height: 100%;
+	width: 100%;
+}
+#sign-up {
+	padding: 25px;
+	padding-left: 50px;
+	font-family: 'Dancing Script', cursive;
+}
+
+.listed > li > button {
+		width: 100px;
+		font-family: 'Dancing Script', cursive;
+}
+
+
+input{
+	background-color:#EFD78D;
+	padding:12px 20px;
+	color: black;
+	border: 3px solid maroon;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	outline:none;
+	
+}
 
 
 
@@ -183,6 +270,7 @@ h2{
 
 
 
+}
 
 
 
@@ -193,11 +281,62 @@ h2{
 /*media queries*/
 
 /*tablets*/
-@media only screen and (max-width:768px) {
-	.col-md-1{
+@media only screen and (min-width: 416px) and (max-width: 960px) {
+
+
+.explore-left{
+	width: 70%;
+	margin-right: 10px;
+}
+
+.explore-left > img {
+	height: 300px;
+	width: 500px;
+
+}
+#sign-up {
+	padding: 25px;
+	padding-left: 15px;
+	font-family: 'Dancing Script', cursive;
+}
+
+.listed > li > button {
+		width: 100%;
+		font-family: 'Dancing Script', cursive;
+}
+
+input{
+	background-color:#EFD78D;
+	padding:12px 20px;
+	color: black;
+	border: 3px solid maroon;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	outline:none;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.col-md-1{
 		width: 8.33%; /*100 divided by 12*/
-	}
-	.col-md-2 {
+}
+.col-md-2 {
 	width: 16.66%;/* 100divided by 12 x 2*/
 }
 .col-lmd-3 {
@@ -246,7 +385,45 @@ h2{
 }
 
 /*mobile*/
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 415px){
+
+
+.explore-left{
+	width: 100%;
+}
+
+.explore-left > img {
+	height: 100%;
+	width: 100%;
+}
+#sign-up {
+	width: 100%;
+	padding: 25px;
+	
+	font-family: 'Dancing Script', cursive;
+}
+
+.listed > li > button {
+	width: 100%;
+	font-family: 'Dancing Script', cursive;
+}
+input[type="text"]{
+	background-color:#EFD78D;
+	padding:12px 20px;
+	color: black;
+	border: 3px solid maroon;
+	-webkit-transition:0.5s;
+	transition:0.5s;
+	outline:none;
+	width:100%;
+}
+
+.gender {
+	display: inline;
+	margin-left: 50px;
+	font-size: 20px;
+}
+
 .col-sm-1{
 	width: 8.33%; /*100divided by 12*/
 }
@@ -287,69 +464,4 @@ h2{
 
 }
 
-button{
-	 background-color: brown;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
 
-
-hr {
-	 display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #874338;
-    margin: 1em 0;
-    padding: 0;
-}
-
-input{
-	background-color:#EFD78D;
-	padding:12px 20px;
-	color: black;
-	border: 3px solid maroon;
-	-webkit-transition:0.5s;
-	transition:0.5s;
-	outline:none;
-}
-input:focus {
-	border: 3px solid darkorange;
-}
-
-.gender{
-	color: #EFD78D;
-}
-
-#log-in {
-	
-	padding: 10px;
-}
-#link {
-	margin-left: 400px;
-}
-
-#sign-up {
-	padding: 25px;
-	padding-left: 50px;
-	font-family: 'Dancing Script', cursive;
-}
-
-.listed > li > button {
-		width: 100px;
-		font-family: 'Dancing Script', cursive;
-}
-
-.footer-link > a {
-	text-decoration:none;
-	color:pink;
-	margin: 10px;
-	font-size: 10px;
-	text-align: right;
-}
